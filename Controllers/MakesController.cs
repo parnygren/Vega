@@ -26,11 +26,5 @@ namespace vega.Controllers
 
             return mapper.Map<List<Make>, List<MakeResource>>(makes);
         }
-
-        [HttpGet("/api/makes2")]
-        public IActionResult GetMakes2()
-        {            
-            return Ok(new { name = "pär" });
-        }
     }
 }
